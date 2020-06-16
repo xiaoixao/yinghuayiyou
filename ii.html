@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        #nav2 {
+            height: 80px;
+        }
+        
+        #nav2 .navbar-collapse li {
+            margin-left: 60px;
+            margin-top: 10px;
+        }
+        
+        #nav2 .navbar-collapse li a {
+            color: #000;
+            font-size: 20px;
+        }
+        
+        #box2 img {
+            position: relative;
+            clear: both;
+            width: 100%;
+            height: 446px;
+        }
+        
+        #box1 #wenzi {
+            position: relative;
+            clear: both;
+            width: 100%;
+            top: -400px;
+            color: white;
+        }
+        
+        #wenzi p {
+            margin-left: 50px;
+        }
+        
+        #wenzi #p1 {
+            font-size: 30px;
+            padding-top: 50px;
+        }
+        
+        #wenzi .p2 {
+            font-size: 16px;
+        }
+        
+        #serh {
+            position: relative;
+            top: 60px;
+        }
+        
+        #serh button {
+            height: 50px;
+        }
+        
+        #Sbanner {
+            margin-top: -270px;
+        }
+        
+        #row1 {
+            width: 1200px;
+            height: 364px;
+            position: relative;
+            left: 50%;
+            margin-left: -600px;
+        }
+        
+        #row1-img {
+            position: relative;
+            clear: both;
+            width: 100%;
+        }
+        
+        #Sbanner .row .col-md-9 p:first-child {
+            font-size: 24px;
+        }
+        
+        #Sbanner #hot1 {
+            font-size: 32px;
+            margin-top: 20px;
+        }
+        
+        #Sbanner #hot2 {
+            font-size: 16px;
+        }
+        
+        #Sbanner #hot3 {
+            font-size: 32px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        #Sbanner #hot4 {
+            text-align: center;
+            font-size: 16px;
+        }
+        
+        @media screen and (max-width: 1000px) {
+            #nav1 {
+                display: none;
+            }
+            #nav2 #quick {
+                border-radius: 5px;
+                border: tomato;
+                background-color: tomato;
+                width: 90px;
+                height: 45px;
+                color: white;
+                line-height: 45px;
+                margin-top: 15px;
+                margin-left: 50px;
+            }
+            #nav2 navbar-brand {
+                position: relative;
+                left: 0;
+            }
+            .p2 {
+                display: none;
+            }
+            .p4 {
+                display: none;
+            }
+            #row1-img {
+                display: none;
+            }
+            #row1 .col-md-9 {
+                display: none;
+            }
+            #row1 .col-md-3 p {
+                display: none;
+            }
+            .col-sm-12 {
+                display: inline-block;
+                position: relative;
+                top: -260px;
+                height: 200px;
+                width: 100%;
+                background-color: white;
+            }
+            .col-sm-12 img {
+                position: relative;
+                top: 50px;
+            }
+            .col-sm-12 p {
+                position: relative;
+                left: 150px;
+                top: -50px;
+            }
+            .col-sm-12 .p-1 {
+                font-size: 24px;
+                color: lightskyblue;
+            }
+            #Sbanner #hot1 {
+                position: relative;
+                top: -240px;
+            }
+            #Sbanner #hot2 {
+                position: relative;
+                top: -240px;
+                left: 10px;
+            }
+            #row2 .bg {
+                display: none;
+            }
+            #row2 .sm {
+                position: relative;
+                top: -200px;
+            }
+            #row2 #btn1 {
+                position: relative;
+                top: -200px;
+                left: 100px;
+            }
+            #row2 #btn1 a {
+                color: #000;
+            }
+            #mis2 {
+                width: 100%;
+            }
+            #f1 {
+                display: none;
+            }
+            #f2 {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (min-width: 1000px) {
+            #nav1 .navbar-brand {
+                position: absolute;
+                left: 1000px;
+            }
+            #nav1 .navbar-collapse {
+                position: absolute;
+                left: 1050px;
+            }
+            #nav2 #quick {
+                display: none;
+            }
+            #nav2 .navbar-brand {
+                position: absolute;
+                left: 150px;
+            }
+            #nav2 .navbar-collapse {
+                position: absolute;
+                left: 400px;
+            }
+            #wenzi #p3 {
+                display: none;
+            }
+            #serh {
+                position: relative;
+                top: 100px;
+                left: 500px;
+            }
+            #row1 .col-md-9 p {
+                position: relative;
+                clear: both;
+                width: 100%;
+                top: -330px;
+                left: 550px;
+                font-size: 16px;
+                color: white;
+            }
+            #row1 .col-md-3 {
+                height: 364px;
+                background: rgb(21, 21, 133);
+                text-align: center;
+                position: relative;
+                top: -364px;
+            }
+            #row1 .col-md-3 img {
+                margin-top: 100px;
+            }
+            #row1 .col-md-3 div {
+                position: relative;
+                left: 100px;
+                top: 20px;
+            }
+            .col-sm-12 {
+                display: none;
+            }
+            .row .col-md-6 .im1 {
+                position: relative;
+                left: -460px;
+            }
+            .row .col-md-6 .im2 {
+                width: 600px;
+                height: 258px;
+                position: relative;
+                left: 770px;
+                top: -970px;
+            }
+            .row .col-md-6 .div1 {
+                height: 75px;
+                width: 588px;
+                color: white;
+                padding: 15px;
+                background-color: rgba(0, 0, 0, 1);
+                position: relative;
+                left: -460px;
+            }
+            .row .col-md-6 .div2 {
+                height: 65px;
+                width: 600px;
+                color: white;
+                padding: 13px;
+                background-color: rgba(0, 0, 0, .2);
+                position: relative;
+                left: 770px;
+                top: -970px;
+            }
+            #row2 #btn1 {
+                display: none;
+            }
+            #Sbanner #hot3 {
+                position: relative;
+                top: -880px;
+            }
+            #Sbanner #hot4 {
+                position: relative;
+                top: -870px;
+                left: 10px;
+            }
+            #row3 .col-md-5 img {
+                position: relative;
+                top: -850px;
+                left: 150px;
+            }
+            #row3 .col-md-7 {
+                position: relative;
+                top: -850px;
+                left: 20px;
+                border: 1px solid red;
+                background-color: cornflowerblue;
+                height: 350px;
+                width: 750px;
+                color: white;
+                text-align: center;
+            }
+            #f2 {
+                display: none;
+            }
+            #f1 {
+                width: 100%;
+                margin-top: -750px;
+            }
+            #mis2 {
+                position: relative;
+                top: -800px;
+                left: 150px;
+                width: 1250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" id="nav1" navbar-fixed-top>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-1">
+                    <span class="sr-only">导航开关</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/tell.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-1">
+                <ul class="nav navbar-nav">
+                    <li><a>400-808-8682</a></li>
+                    <li><a href="#">请登录</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-default" id="nav2">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button id="quick">快速定制</button>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-2">
+                <span class="sr-only">导航开关</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-2">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">热门路线</a></li>
+                    <li><a href="#">签证推荐</a></li>
+                    <li><a href="#">使命愿景</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="box1">
+        <div id="box2">
+            <img src="img/banner.jpg" src="banner">
+        </div>
+        <div id="wenzi">
+            <p id="p1">悠游古欧洲&nbsp;遍历德法瑞意</p>
+            <p class="p4">-------------------------------------------------------</p>
+            <p class="p2">巴黎卢浮宫、塞纳河游船、凡尔赛宫</p>
+            <p class="p2">少女峰、大运河游船、金色列车、西庸城堡</p>
+            <p id="p3">全程升级热早+1晚5星酒店</p>
+            <p class="p4">--------------------------------------------------------------------</p>
+            <div class="btn-group btn-group-lg" id="serh">
+                <button type="button" class="btn" id="btn1">
+                    <img src="img/position.png" alt="position">  &nbsp&nbsp目的地
+                </button>
+                <button type="button" class="btn" id="btn2"><input type="text" placeholder=" | 日本  美国  英国  地中海" id="in1"></button>
+                <button type="button" class="btn btn-warning" id="btn4">&nbsp&nbsp&nbsp<img src="img/search.png" alt="search">&nbsp&nbsp&nbsp</button>
+            </div>
+        </div>
+    </div>
+    <div id="Sbanner" style="background-color:#ddd;overflow: hidden;">
+        <!-- row1 -->
+        <div class="row" id="row1">
+            <div id="row1-img"><img src="img/Sbanner2.jpg" alt=""></div>
+            <div class="col-md-9">
+                <p>机场接送 &nbsp;&nbsp;省钱省心</p>
+                <p>提供上海、苏州、无锡各市</p>
+                <p>往返机场、码头接送服务，更有包车服务</p>
+            </div>
+            <div class="col-md-3">
+                <img src="img/car.png " alt="banner " />
+                <p style="text-align: center; font-size:16px;color: white; ">车辆接送</p>
+                <div style="border:2px solid white;border-radius: 10px;width: 80px;height: 30px; "><a style="color:white; ">查看详情</a></div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <img src="img/carH.png" alt="">
+            <p class="p-1">机场接送 &nbsp;&nbsp;省心省力</p>
+            <p class="p-2">提供上海、苏州、无锡各市</p>
+            <p class="p-2">往返机场、码头接送服务，更有包车服务</p>
+        </div>
+        <p id="hot1">热&nbsp&nbsp门&nbsp&nbsp路&nbsp&nbsp线</p>
+        <p id="hot2">Popular tourist routes</p>
+
+        <!-- row2 -->
+        <div class="row" id="row2">
+            <div class="col-md-6">
+                <img src="img/hot1.jpg " alt=" " class="im1 sm">
+                <div class="div1 sm">
+                    <p>海南三亚5天4晚，纯玩、4晚红树林度假王国</p>
+                    <p>￥2580/人起</p>
+                </div>
+                <img src="img/hot2.jpg " alt=" " class="im1 sm">
+                <div class="div1 sm">
+                    <p>德法意瑞欧洲4国，ABCD任意线路由您挑选</p>
+                    <p>￥7999/人起</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="img/hot3.jpg " alt=" " class="im2 bg">
+                <div class="div2 bg">
+                    <p>曼谷+芭提雅 国际五星，赠送2220大礼包，绝无自费</p>
+                    <p>￥2799/人起</p>
+                </div>
+                <img src="img/hot4.jpg " alt=" " class="im2 bg">
+                <div class="div2 bg">
+                    <p>日本本州游 樱花、寿司、温泉、美食</p>
+                    <p>￥5399/人起</p>
+                </div>
+                <img src="img/hot5.jpg " alt=" " class="im2 bg">
+                <div class="div2 bg">
+                    <p>斯里兰卡7天6晚全景游 保证入住2晚香格里拉</p>
+                    <p>￥7999/人起</p>
+                </div>
+            </div>
+            <button style="border-radius: 5px;border: white;width: 90px;height: 45px;line-height: 45px;" id="btn1"><a href="#">查看更多></a></button>
+        </div>
+
+        <p id="hot3">使命与愿景</p>
+        <p id="hot4">让旅游回归本质，体验纯粹旅游</p>
+
+        <!-- row3 -->
+        <div class="row" id="row3">
+            <div class="col-md-5">
+                <img src="img/mission1.jpg" alt="miss1">
+            </div>
+            <div class="col-md-7">
+                <h3>服务理念及优势</h3>
+                <br/>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案，陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲等多个国家拥有丰富资源，同时致力于给客户提供性价比高的产品和服务。</p>
+            </div>
+            <img src="img/mission2.jpg" alt="miss2" id="mis2">
+            <!-- <div id="brand">
+                <img src="img/icon11.png" alt="ic11" class="icon">
+                <p>品质行程</p>
+                <p>旅游达人精心设计、基于口碑反复打磨， 告别人山人海鸡肋景点。 全网最好，敢跟任何产品比</p>
+                <img src="img/icon22.png" alt="ic22" class="icon">
+                <p>品质消费</p>
+                <p>不推自费， 不进垃圾购物店和伪景点
+                <img src="img/icon33.png" alt="ic33" class="icon">
+                <p>品质小组</p>
+                <p>独立成团不散拼， 只跟亲朋好友一起玩，每天发团 </p>
+			</div> -->
+
+        </div>
+
+        <img src="img/f1.jpg" alt="" id="f1">
+        <img src="img/f2.jpg" alt="" id="f2">
+    </div>
+</body>
+
+</html>
